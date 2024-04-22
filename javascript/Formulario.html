@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="css" href="Formulario.css">
+</head>
+<body>
+    <div class="container">
+        <button id="btnRegistro">Registro de Alumnos</button>
+        <button id="btnNotas">Registro de Notas</button>
+        <button id="btnMateria">Registro de Materias</button>
+        
+        <div id="registroForm" class="formulario oculto">
+            <h2>Registro de Alumnos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="notasForm" class="formulario oculto">
+            <h2>Registro de Notas</h2>
+            <form>
+                <label for="alumno">Alumno:</label>
+                <input type="text" id="alumno" name="alumno">
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" name="materia">
+                <label for="nota">Nota:</label>
+                <input type="text" id="nota" name="nota">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="materiaForm" class="formulario oculto">
+            <h2>Registro de Materias</h2>
+            <form>
+                <label for="nombreMateria">Nombre de la Materia:</label>
+                <input type="text" id="nombreMateria" name="nombreMateria">
+                <label for="semestre">Semestre:</label>
+                <input type="text" id="semestre" name="semestre">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/Formulario.js"></script>
+</body>
+</html>
